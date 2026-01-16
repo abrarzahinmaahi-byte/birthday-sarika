@@ -484,6 +484,33 @@ a:hover{
 <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,600;1,600&family=Oswald:wght@200..700&family=Satisfy&display=swap" rel="stylesheet">
 	<title>HAPPY BIRTHDAY SARIKA</title>
 </head>
+	<script>
+  // Disable right click
+  document.oncontextmenu = function () {
+    return false;
+  };
+
+  // Disable keys
+  document.onkeydown = function (e) {
+    e = e || window.event;
+
+    // F12
+    if (e.keyCode === 123) {
+      return false;
+    }
+
+    // Ctrl+Shift+I / J / C
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+      return false;
+    }
+
+    // Ctrl+U
+    if (e.ctrlKey && e.keyCode === 85) {
+      return false;
+    }
+  };
+</script>
+
 <body>
 	<div>
 	<h1 class="rs">
@@ -499,4 +526,5 @@ a:hover{
 	</div>
       
 </body>
+
 </html>
