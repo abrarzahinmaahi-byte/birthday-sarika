@@ -511,6 +511,13 @@ a:hover{
   };
 </script>
 
+<script>
+  setInterval(function () {
+    if (window.outerWidth - window.innerWidth > 160) {
+      document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:40vh'>Protected</h2>";
+    }
+  }, 500);
+</script>
 
 <body>
 	<div>
@@ -529,4 +536,5 @@ a:hover{
 </body>
 
 </html>
+
 
